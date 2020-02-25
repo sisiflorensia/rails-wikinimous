@@ -1,0 +1,8 @@
+<div class="col-8 mx-auto my-3">
+  <% @articles.each do |article| %>
+    <div class="m-4">
+      <h3><%= link_to article.title, article_path(article.id) %></h3>
+      <p class="text-secondary"><%= article.content %></p>
+    </div>
+  <% end %>
+</div>
